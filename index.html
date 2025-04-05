@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap">
+    <style>
+        /* Additional styles to fix social icons visibility */
+        .social-icons {
+            position: relative;
+            z-index: 9999 !important;
+            isolation: isolate;
+        }
+
+        .social-icon {
+            position: relative;
+            z-index: 9999 !important;
+            isolation: isolate;
+        }
+    </style>
+</head>
+
+<body data-scroll-container>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Portfolio</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="mobile-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero" data-scroll-section>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="pre-heading">Hello, I'm</span>
+                <h1 class="gradient-text">Arman Singh</h1>
+                <h2 class="subtitle">Web Developer & Designer</h2>
+                <p class="description">I create stunning digital experiences with a focus on clean, responsive design
+                    and engaging user interfaces.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn" id="hero-projects-btn">View My Work</a>
+                    <a href="#about" class="btn secondary-btn">About Me</a>
+                </div>
+                <div class="social-icons-wrapper"
+                    style="position: relative; z-index: 9999; isolation: isolate; pointer-events: auto;">
+                    <div class="social-icons" style="position: relative; z-index: 9999;">
+                        <a href="https://github.com/armansingh012" class="social-icon" target="_blank" rel="noopener"
+                            style="position: relative; z-index: 9999; display: inline-block;">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/arman-singh-9043a5323" class="social-icon" target="_blank"
+                            rel="noopener" style="position: relative; z-index: 9999; display: inline-block;">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-icon"
+                            style="position: relative; z-index: 9999; display: inline-block;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/._a.r.m.a.n.._" class="social-icon" target="_blank"
+                            rel="noopener" style="position: relative; z-index: 9999; display: inline-block;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/imagemy.jpg" alt="Profile Photo">
+                <div class="shape-blob"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <p>Scroll Down</p>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section" data-scroll-section>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>My Journey</h3>
+                    <p>I am a passionate web developer currently pursuing my undergraduate degree in Computer Science at
+                        Lucknow University. While my CGPA may be average, my deep interest in coding and web development
+                        fuels my drive to constantly learn, grow, and build digital experiences that are both visually
+                        compelling and highly functional.</p>
+
+                    <div class="about-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="education">Education</button>
+                            <button class="tab-btn" data-tab="experience">Experience</button>
+                            <button class="tab-btn" data-tab="interests">Interests</button>
+                        </div>
+
+                        <div class="tab-content active" id="education">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h4>Bachelor of Technology in Computer Science</h4>
+                                        <p class="timeline-date">2024 - 2028</p>
+                                        <p>Pursuing my degree with a focus on web development and software engineering.
+                                            Current CGPA: 7/10</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h4>High School Diploma</h4>
+                                        <p class="timeline-date">2020 - 2022</p>
+                                        <p>Completed with distinction in Mathematics and Computer Science. Percentage:
+                                            92%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="experience">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h4>Created few small projects</h4>
+                                        <p class="timeline-date">Summer 2025</p>
+                                        <p>This Portfolio is my biggest project till now</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h4>Freelance Web Developer</h4>
+                                        <p class="timeline-date">2022 - Present</p>
+                                        <p>Designing and developing websites for small businesses and startups.</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="interests">
+                            <ul class="interests-list">
+                                <li><i class="fas fa-laptop-code"></i> Full-Stack Development</li>
+                                <li><i class="fas fa-mobile-alt"></i> Mobile App Development</li>
+                                <li><i class="fas fa-paint-brush"></i> UI/UX Design</li>
+                                <li><i class="fas fa-robot"></i> Artificial Intelligence</li>
+                                <li><i class="fas fa-gamepad"></i> Game Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+ <!-- <div class="certificates-container">
+                    <h3>Certifications & Achievements</h3>
+                    <div class="certificates-grid">
+                        <div class="certificate-card" data-scroll data-scroll-speed="1">
+                            <div class="certificate-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="certificate-content">
+                                <h4>React.js Advanced Concepts</h4>
+                                <p class="certificate-issuer">Udemy</p>
+                                <p class="certificate-date">September 2023</p>
+                            </div>
+                        </div>
+
+                        <div class="certificate-card" data-scroll data-scroll-speed="0.8">
+                            <div class="certificate-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="certificate-content">
+                                <h4>Full Stack Web Development</h4>
+                                <p class="certificate-issuer">freeCodeCamp</p>
+                                <p class="certificate-date">June 2023</p>
+                            </div>
+                        </div>
+
+                        <div class="certificate-card" data-scroll data-scroll-speed="1.2">
+                            <div class="certificate-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="certificate-content">
+                                <h4>UI/UX Design Fundamentals</h4>
+                                <p class="certificate-issuer">Coursera</p>
+                                <p class="certificate-date">March 2023</p>
+                            </div>
+                        </div>
+
+                        <div class="certificate-card" data-scroll data-scroll-speed="0.7">
+                            <div class="certificate-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="certificate-content">
+                                <h4>State-level Hackathon Winner</h4>
+                                <p class="certificate-issuer">TechFest 2023</p>
+                                <p class="certificate-date">November 2023</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section" data-scroll-section>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web frontend">
+                    <div class="project-img">
+                        <img src="" alt="Tic-Tac-Toe" loading="lazy">
+                        <div class="project-img-fallback">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Tic-Tac_Toe</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://armansingh012.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener"
+                                    class="project-link github">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link live-demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Tic-Tac_Toe</h3>
+                        <p class="project-description">A fully function game that you can play with your friends and family</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <button class="project-details-btn">View Details</button>
+                    </div>
+                    <div class="project-details-modal">
+                        <div class="modal-content">
+                            <span class="close-modal">&times;</span>
+                            <h3>Tic-Tac_Toe</h3>
+                            <div class="modal-img">
+                                <img src="" alt="Tic-Tac-Toe" loading="lazy">
+                                <div class="modal-img-fallback">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Tic-Tac_Toe</span>
+                                </div>
+                            </div>
+                            <div class="modal-description">
+                                <p>Play and Win</p>
+                                <ul>
+                                    <li>🎮 Two-Player Mode – Play with a friend locally, taking turns.</li>
+                                    <li>🤖 Single-Player Mode – Play against a computer with basic AI.
+
+                                    </li>
+                                    <li>🧠 Smart Move Detection – Prevents overwriting existing moves.</li>
+                                    <li>🏁 Win & Draw Detection – Instantly detects game outcomes and displays results.</li>
+                                    
+                                </ul>
+                                <div class="modal-links">
+                                    <a href="https://github.com/armansingh012/Tic-Tac-Toe" target="_blank"
+                                        rel="noopener" class="btn primary-btn">
+                                        <i class="fab fa-github"></i> GitHub Repository
+                                    </a>
+                                    <a href="https://armansingh012.github.io/Tic-Tac-Toe/" class="btn secondary-btn">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2
+                <div class="project-card" data-category="web backend">
+                    <div class="project-img">
+                        <img src="images/project2.jpg" alt="Task Management API" loading="lazy">
+                        <div class="project-img-fallback">
+                            <i class="fas fa-tasks"></i>
+                            <span>Task Management API</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/armansingh012/task-api" target="_blank" rel="noopener"
+                                    class="project-link github">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link live-demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Task Management API</h3>
+                        <p class="project-description">RESTful API for task management with JWT authentication and
+                            comprehensive documentation.</p>
+                        <div class="project-tech">
+                            <span>Express.js</span>
+                            <span>JWT</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <button class="project-details-btn">View Details</button>
+                    </div>
+                    <div class="project-details-modal">
+                        <div class="modal-content">
+                            <span class="close-modal">&times;</span>
+                            <h3>Task Management API</h3>
+                            <div class="modal-img">
+                                <img src="images/project2.jpg" alt="Task Management API" loading="lazy">
+                                <div class="modal-img-fallback">
+                                    <i class="fas fa-tasks"></i>
+                                    <span>Task Management API</span>
+                                </div>
+                            </div>
+                            <div class="modal-description">
+                                <p>A robust RESTful API for managing tasks and projects. Key features include:</p>
+                                <ul>
+                                    <li>JWT-based authentication and authorization</li>
+                                    <li>Task CRUD operations with filtering and sorting</li>
+                                    <li>Project organization and team management</li>
+                                    <li>Rate limiting and request validation</li>
+                                    <li>Comprehensive API documentation with Swagger</li>
+                                </ul>
+                                <div class="modal-links">
+                                    <a href="https://github.com/armansingh012/task-api" target="_blank" rel="noopener"
+                                        class="btn primary-btn">
+                                        <i class="fab fa-github"></i> GitHub Repository
+                                    </a>
+                                    <a href="#" class="btn secondary-btn">
+                                        <i class="fas fa-external-link-alt"></i> API Documentation
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="frontend">
+                    <div class="project-img">
+                        <img src="images/project3.jpg" alt="Weather Dashboard" loading="lazy">
+                        <div class="project-img-fallback">
+                            <i class="fas fa-cloud-sun"></i>
+                            <span>Ultra-Edit</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/armansingh012/weather-app" target="_blank" rel="noopener"
+                                    class="project-link github">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link live-demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Ultra-Edit</h3>
+                        <p class="project-description">Was my first project that is a carbon copy of a original site.</p>
+                        <!-- <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>OpenWeather API</span>
+                            <span>Chart.js</span>
+                        </div> -->
+                        <button class="project-details-btn">View Details</button>
+                    </div>
+                    <div class="project-details-modal">
+                        <!-- <div class="modal-content">
+                            <span class="close-modal">&times;</span>
+                            <h3>Weather Dashboard</h3>
+                            <div class="modal-img">
+                                <img src="images/project3.jpg" alt="Weather Dashboard" loading="lazy">
+                                <div class="modal-img-fallback">
+                                    <i class="fas fa-cloud-sun"></i>
+                                    <span>Weather Dashboard</span>
+                                </div>
+                            </div>
+                            <div class="modal-description">
+                                <p>A sleek, responsive weather dashboard application with the following features:</p>
+                                <ul>
+                                    <li>Current weather conditions with visual indicators</li>
+                                    <li>5-day forecast with hourly breakdowns</li>
+                                    <li>Location search with autocomplete</li>
+                                    <li>Interactive temperature and precipitation charts</li>
+                                    <li>Saved location favorites with local storage</li>
+                                </ul> -->
+                                <div class="modal-links">
+                                    <a href="https://github.com/armansingh012/Ultra-edit" target="_blank"
+                                        rel="noopener" class="btn primary-btn">
+                                        <i class="fab fa-github"></i> GitHub Repository
+                                    </a>
+                                    <a href="https://armansingh012.github.io/Ultra-edit/" class="btn secondary-btn">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <!-- <div class="project-card" data-category="web backend">
+                    <div class="project-img">
+                        <img src="images/project4.jpg" alt="Blog Platform" loading="lazy">
+                        <div class="project-img-fallback">
+                            <i class="fas fa-blog"></i>
+                            <span>Blog Platform</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/armansingh012/blog-platform" target="_blank" rel="noopener"
+                                    class="project-link github">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link live-demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Blog Platform</h3>
+                        <p class="project-description">Feature-rich blogging platform with markdown support, categories,
+                            and admin dashboard.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>Markdown</span>
+                        </div>
+                        <button class="project-details-btn">View Details</button>
+                    </div>
+                    <div class="project-details-modal">
+                        <div class="modal-content">
+                            <span class="close-modal">&times;</span>
+                            <h3>Blog Platform</h3>
+                            <div class="modal-img">
+                                <img src="images/project4.jpg" alt="Blog Platform" loading="lazy">
+                                <div class="modal-img-fallback">
+                                    <i class="fas fa-blog"></i>
+                                    <span>Blog Platform</span>
+                                </div>
+                            </div>
+                            <div class="modal-description">
+                                <p>A modern blogging platform built for ease of use and flexibility:</p>
+                                <ul>
+                                    <li>Rich text editor with markdown support</li>
+                                    <li>Category and tag organization</li>
+                                    <li>User authentication and role-based permissions</li>
+                                    <li>Comment system with moderation</li>
+                                    <li>Analytics dashboard for content creators</li>
+                                </ul>
+                                <div class="modal-links">
+                                    <a href="https://github.com/armansingh012/blog-platform" target="_blank"
+                                        rel="noopener" class="btn primary-btn">
+                                        <i class="fab fa-github"></i> GitHub Repository
+                                    </a>
+                                    <a href="#" class="btn secondary-btn">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            </div>
+
+            <div class="projects-cta">
+                <a href="https://github.com/armansingh012" target="_blank" rel="noopener" class="btn primary-btn">
+                    <i class="fab fa-github"></i> View All Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section" data-scroll-section>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="skills-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="tools">Tools</button>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Frontend Skills -->
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-img">
+                        <img src="images/html5.jpg" alt="HTML5" loading="lazy">
+                        <div class="skill-img-fallback">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-overlay">
+                            <div class="skill-links">
+                                <a href="#" class="skill-link">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-info">
+                        <h3 class="skill-title">HTML5</h3>
+                        <p class="skill-description">Semantic markup, accessibility, SEO best practices</p>
+                        <div class="skill-tech">
+                            <span>Semantic HTML</span>
+                            <span>Accessibility</span>
+                            <span>SEO</span>
+                        </div>
+                        <button class="skill-details-btn">View Details</button>
+                    </div>
+                    <div class="skill-details-modal">
+                        <div class="modal-content">
+                            <span class="close-modal">&times;</span>
+                            <h3>HTML5</h3>
+                            <div class="modal-img">
+                                <img src="images/html5.jpg" alt="HTML5" loading="lazy">
+                                <div class="modal-img-fallback">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                            </div>
+                            <div class="modal-description">
+                                <p>Advanced HTML5 skills and best practices:</p>
+                                <ul>
+                                    <li>Semantic HTML elements and structure</li>
+                                    <li>ARIA roles and accessibility features</li>
+                                    <li>SEO optimization techniques</li>
+                                    <li>HTML5 APIs and modern features</li>
+                                    <li>Cross-browser compatibility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CSS3 Skill -->
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-img">
+                        <img src="images/css3.jpg" alt="CSS3" loading="lazy">
+                        <div class="skill-img-fallback">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-overlay">
+                            <div class="skill-links">
+                                <a href="#" class="skill-link">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-info">
+                        <h3 class="skill-title">CSS3</h3>
+                        <p class="skill-description">Modern layouts, animations, and responsive design</p>
+                        <div class="skill-tech">
+                            <span>Flexbox</span>
+                            <span>Grid</span>
+                            <span>Animations</span>
+                        </div>
+                        <button class="skill-details-btn">View Details</button>
+                    </div>
+                    <div class="skill-details-modal">
+                        <div class="modal-content">
+                            <span class="close-modal">&times;</span>
+                            <h3>CSS3</h3>
+                            <div class="modal-img">
+                                <img src="images/css3.jpg" alt="CSS3" loading="lazy">
+                                <div class="modal-img-fallback">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span>CSS3</span>
+                                </div>
+                            </div>
+                            <div class="modal-description">
+                                <p>Advanced CSS3 capabilities:</p>
+                                <ul>
+                                    <li>Flexbox and Grid layouts</li>
+                                    <li>CSS animations and transitions</li>
+                                    <li>Responsive design principles</li>
+                                    <li>CSS variables and custom properties</li>
+                                    <li>CSS preprocessors (Sass/SCSS)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JavaScript Skill -->
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-img">
+                        <img src="images/javascript.jpg" alt="JavaScript" loading="lazy">
+                        <div class="skill-img-fallback">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-overlay">
+                            <div class="skill-links">
+                                <a href="#" class="skill-link">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-info">
+                        <h3 class="skill-title">JavaScript</h3>
+                        <p class="skill-description">Modern ES6+, async programming, and DOM manipulation</p>
+                        <div class="skill-tech">
+                            <span>ES6+</span>
+                            <span>Async/Await</span>
+                            <span>DOM</span>
+                        </div>
+                        <button class="skill-details-btn">View Details</button>
+                    </div>
+                    <div class="skill-details-modal">
+                        <div class="modal-content">
+                            <span class="close-modal">&times;</span>
+                            <h3>JavaScript</h3>
+                            <div class="modal-img">
+                                <img src="images/javascript.jpg" alt="JavaScript" loading="lazy">
+                                <div class="modal-img-fallback">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="modal-description">
+                                <p>Comprehensive JavaScript expertise:</p>
+                                <ul>
+                                    <li>ES6+ features and modern syntax</li>
+                                    <li>Asynchronous programming patterns</li>
+                                    <li>DOM manipulation and events</li>
+                                    <li>Object-oriented programming</li>
+                                    <li>Testing and debugging</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <!-- <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>Node.js</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar" style="width: 75%"></div>
+                        </div>
+                        <p>Express.js, RESTful APIs, Authentication</p>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>MongoDB</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar" style="width: 70%"></div>
+                        </div>
+                        <p>Schema design, Aggregation, Mongoose ODM</p>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>SQL</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar" style="width: 65%"></div>
+                        </div>
+                        <p>PostgreSQL, MySQL, Database Design</p>
+                    </div>
+                </div> -->
+
+                <!-- Development Tools -->
+                <!-- <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>Git</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                        <p>Version Control, Collaboration, CI/CD</p>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>Docker</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar" style="width: 60%"></div>
+                        </div>
+                        <p>Containerization, Docker Compose</p>
+                    </div>
+                </div> -->
+
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3>VS Code</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                        <p>Extensions, Debugging, Customization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer-section" data-scroll-section>
+        <!-- Add animated background elements -->
+        <div class="bg-element bg-element-1"></div>
+        <div class="bg-element bg-element-2"></div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Arman Singh</h3>
+                    <p>Web Developer & Designer</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home" id="footer-home-link">Home</a></li>
+                            <li><a href="#about" class="about-footer-link" id="footer-about-link">About</a></li>
+                            <li><a href="#projects" class="projects-footer-link" id="footer-projects-link">Projects</a>
+                            </li>
+                            <li><a href="#skills" class="skills-footer-link" id="footer-skills-link">Skills</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links-column">
+                        <h4>Get In Touch</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-envelope"></i> armansin667@example.com</li>
+                            <li><i class="fas fa-phone"></i> +91 98765 432**</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Lucknow, India</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-newsletter">
+                        <h4>Stay Updated</h4>
+                        <p>Subscribe to my newsletter for latest updates</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-social">
+                <div class="social-icons">
+                    <a href="https://github.com/armansingh012" class="social-icon" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/arman-singh-9043a5323" class="social-icon" target="_blank"
+                        rel="noopener">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/._a.r.m.a.n.._" class="social-icon" target="_blank"
+                        rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Arman Singh. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
